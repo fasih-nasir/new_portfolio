@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
   var navbar = document.getElementById("div_3");
 
 
-  if (window.scrollY > 250) {
+  if (window.scrollY > 200) {
     navbar.classList.add("navfix");
   
   }
