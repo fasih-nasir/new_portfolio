@@ -4,6 +4,24 @@
 //     document.getElementById('loader').style.display = 'none';
 //     document.getElementById("loader").className="Re"
 //   }, 2500); 
+// ======================================
+
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("div_3");
+
+
+  if (window.scrollY > 250) {
+    navbar.classList.add("navfix");
+  
+  }
+  else {
+  navbar.classList.remove("navfix");
+  }
+});
+
+;
+
+
     // =========================== AGE CODE START ===============================
   var age=document.getElementById("age")
   age.innerHTML=new Date().getFullYear()-2006 ;

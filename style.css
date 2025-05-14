@@ -27,6 +27,15 @@ body {
   .main_div .div_2 {
     height: max-content !important;
   }
+.div_3{
+  height: max-content !important;
+  /* position: fixed; */
+top: 0%;
+left: 0%;
+border-radius: 0% !important;
+  transition: 0.5s ease-in-out !important;
+
+}
 
   .h_100vh {
     background-size: cover;
@@ -34,7 +43,10 @@ body {
   }
 
 }
-
+.navfix{
+  position: fixed !important;
+  transition: 0.5s ease-in-out !important;
+}
 /* ====================== MEDIA QUERY END ============================= */
 
 .h_100vh {
@@ -95,6 +107,17 @@ body {
 .btn_inquire{
   outline: none !important;
   box-shadow: none !important;
+  animation:inquire 0.9s ease-in-out infinite ;
+}
+@keyframes inquire {
+  0%,100%{
+    margin-top: 5% !important;
+  }
+  50%{
+    margin-top: 5% !important;
+
+  }
+  
 }
 .btn_color{
   background-color: var(--color1) !important;
