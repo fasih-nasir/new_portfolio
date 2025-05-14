@@ -1,15 +1,35 @@
 
 
-setTimeout(function() {
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById("loader").className="Re"
-  }, 2500); 
+// setTimeout(function() {
+//     document.getElementById('loader').style.display = 'none';
+//     document.getElementById("loader").className="Re"
+//   }, 2500); 
     // =========================== AGE CODE START ===============================
   var age=document.getElementById("age")
   age.innerHTML=new Date().getFullYear()-2006 ;
 
   // =========================== AGE CODE END ===============================
 
+  // ============================= collpase_one start ====================
+  document.addEventListener("DOMContentLoaded", () => {
+    const collapseElement = document.getElementById("collapseExample");
+
+  if(collapseElement){
+    collapseElement.addEventListener("shown.bs.collapse", () => {
+     document.querySelector(".btn_inquire").classList.add("btn_color");
+         document.querySelector(".btn_inquire").innerHTML=` <i class=" fa-solid fa-caret-up fa_caret_up  "></i>`
+    })
+    
+
+    collapseElement.addEventListener("hidden.bs.collapse", () => {
+     document.querySelector(".btn_inquire").classList.remove("btn_color");
+
+     document.querySelector(".btn_inquire").innerHTML=`<i class="fa-solid fa-caret-down fa_caret_down "></i>`
+    });
+  }
+  });
+
+  // ============================= collpase_one end ============================= 
 var all=[
     
     // {name:"Erp Training Pakistan",cat:"React",href:"https://erptrainingpakistan.com/",img:"img/image.png"},
@@ -98,96 +118,13 @@ var all=[
                       
                   }
               }
-  var sel=document.getElementById("sel")
-  var arr=[]
-  for(let i=0;i<all.length;i++){
-     
-  if(arr.indexOf(all[i].cat) === -1){
-  
-      arr.push(all[i].cat)
-  }
-  }
-  
-  for(let i=0;i<arr.length;i++){
-  
-      sel.innerHTML+=`
-          <option value="${arr[i]}" >${arr[i]}</option>
-      `
-  }
-  sel.addEventListener("change",function () {
-  var vl=sel.value
-      if(sel.value ==="C"){
-          fn(all);
-      }
-      else{
-          var fil=[];
-          for(let i=0;i<all.length;i++){
-              // console.log(sel.value );
-              if(all[i].cat === vl){
-                  fil.push(all[i])
-                  
-             
-              }
-          }
-         setTimeout(() => {
-          
-             fn(fil)
-             
-         }, 40);
-          console.log(fil);
-  
-  }
-  
-  })
-  
-}
+            }
   
   
   
   
   
   
-  
-  
-  
-  var searchInput = document.getElementById("search");
-  
-  searchInput.addEventListener("input", function() {
-      var searchValue = searchInput.value.toLowerCase();
-      var filtered = all.filter(function(project) {
-          return project.name.toLowerCase().includes(searchValue) || project.cat.toLowerCase().includes(searchValue);
-      });
-      fn(filtered);
-  });
-  
-  
-  
-  function sendMail() {
-      var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("message").value,
-        message: document.getElementById("email").value,
-      };
-    if(params.name && params.email && params.message){
-              document.getElementById("fill").innerHTML=``
-      const serviceID = "service_8ohznev";
-      const templateID = "template_i9hwpji";
-    
-        emailjs.send(serviceID, templateID, params)
-        .then(res=>{
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert( params.name + " Your msg sent successfully!!")
-    
-        })
-        .catch(err=>console.log(err));
-      }
-      else{
-          document.getElementById("fill").innerHTML=`Fill Field First`
-          // prompt("Fill All Fields")
-      } 
-    }
 
-
+  
+  

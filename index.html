@@ -64,10 +64,10 @@
 
     <!-- ==================== MAIN DIV HERE START======================================= -->
     <div
-      class=" mx-auto d-flex flex-lg-row justify-content-lg-between flex-column align-items-end col-lg-11 col-12 m-0 p-0  main_div gap-3">
+      class=" mx-auto d-flex flex-lg-row justify-content-lg-between flex-column align-items-end col-lg-11 col-11 m-0 p-0  main_div gap-1 gap-lg-3 ">
       <!-- =================== col-3 START ======================================== -->
 
-      <div class=" mx-lg-0 mx-auto p-3 col-lg-3 col-9 p-lg-3 d-flex flex-column   align-items-center div_1">
+      <div class=" mx-lg-0 mx-auto p-3 col-lg-3 col-11 p-lg-3 d-flex flex-column   align-items-center div_1">
         <!-- ============================ -->
 
         <div class="d-flex flex-column align-items-center ">
@@ -76,24 +76,69 @@
 
           <h4 class="pt-lg-3 text-center fw-bold ">Fasih-Nasir</h4>
           <h6 class="fw-normal text-center ">Mern Stack Developer</h6>
-          <hr class="col-12 ">
-          <!-- =================================================================== -->
-          <div class="d-flex flex-row justify-content-between align-items-center col-12 ">
-            <p>Nationality</p>
-            <p>Pakistan</p>
-          </div>
-          <div class=" d-flex flex-row justify-content-between align-items-center col-12">
-            <p>City</p>
-            <p>Karachi</p>
-          </div>
-          <div class=" d-flex flex-row justify-content-between align-items-center  col-12">
-            <p>Age</p>
-            <p id="age">19</p>
-          </div>
-          <!-- =================================================================== -->
-          <hr class=" col-12 mb-5 lh-1">
+          <hr class="d-lg-flex d-none col-12 ">
 
-          <div class="d-flex col-6 mx-auto lh-1  align-items-center justify-content-between  p-0 icon_div ">
+          <!-- =================================================================== -->
+
+          <div class="collapse collpase_one  col-12 bg-transparent " id="collapseExample">
+            <!-- =================================================================== -->
+            <hr class="col-12 ">
+            <!-- =================================================================== -->
+            <div class="card card-body col-12 bg-transparent shadow-none border-0">
+              <div class="col-12">
+                <div class="d-flex flex-row justify-content-between align-items-center col-12 ">
+                  <p>Nationality</p>
+                  <p>Pakistan</p>
+                </div>
+                <div class=" d-flex flex-row justify-content-between align-items-center col-12">
+                  <p>City</p>
+                  <p>Karachi</p>
+                </div>
+                <div class=" d-flex flex-row justify-content-between align-items-center  col-12">
+                  <p>Age</p>
+                  <p id="age">19</p>
+                </div>
+                <!-- =================================================================== -->
+                <hr class=" col-12 mb-5 lh-1">
+                <!-- =================================================================== -->
+              </div>
+            </div>
+            <!-- =========== -->
+            <div class="d-flex col-6 mx-auto lh-1  align-items-center justify-content-between  p-0 icon_div ">
+              <a href="https://github.com/fasih-nasir" target="_blank" class="">
+                <i class="fab fa-github "></i>
+              </a>
+              <a href="https://www.linkedin.com/in/fasihnasir" target="_blank" class="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/yourusername" target="_blank" class="">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/yourusername" target="_blank" class="">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 d-lg-flex flex-column d-none">
+            <div class="d-flex flex-row justify-content-between align-items-center col-12 ">
+              <p>Nationality</p>
+              <p>Pakistan</p>
+            </div>
+            <div class=" d-flex flex-row justify-content-between align-items-center col-12">
+              <p>City</p>
+              <p>Karachi</p>
+            </div>
+            <div class=" d-flex flex-row justify-content-between align-items-center  col-12">
+              <p>Age</p>
+              <p id="age">19</p>
+            </div>
+          </div>
+          <hr class="d-lg-flex d-none col-12 ">
+
+          <!-- =================================================================== -->
+
+          <div class="d-lg-flex d-none col-6 mx-auto lh-1  align-items-center justify-content-between  p-0 icon_div ">
             <a href="https://github.com/fasih-nasir" target="_blank" class="">
               <i class="fab fa-github "></i>
             </a>
@@ -108,6 +153,11 @@
             </a>
           </div>
 
+          <button class="btn col-5 text-center d-flex flex-row justify-content-center align-items-center my-2 mt-3 d-lg-none d-flex border border-1  px-2 fs-6 btn_inquire" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
         </div>
         <!-- ============================ -->
 
@@ -123,125 +173,137 @@
       <!-- =================== col-3 END ======================================== -->
       <!-- =================== col-9 START ======================================== -->
 
-      <div class="col-9 mx-lg-0 mx-auto p-3 col-lg-8  me-auto d-flex flex-column     div_2 io ">
+      <div class="col-11 mx-lg-0 mx-auto  p-3 col-lg-8  d-flex flex-column     div_2  ">
 
-     
+
         <!-- Timeline 8 - Bootstrap Brain Component -->
-     
-    <div class="container-fluid d-flex flex-wrap m-0 p-0 justify-content-between align-items-center">
 
-      <div class="col-lg-5 col-11 my-3 div_box">
-<div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
-            <div class="info-box shadow-box h-full">
+        <div class="container-fluid d-flex flex-wrap m-0 p-0 justify-content-between align-items-center">
+
+          <div class="col-lg-5 col-11 my-3 div_box">
+            <div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
+              <div class="info-box shadow-box h-full">
                 <a class="overlay-link" href="https://wpriverthemes.com/gridx/credential/"></a>
-				
 
-				
-				
-<img decoding="async" class="proj-img" src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
+
+
+
+                <img decoding="async" class="proj-img"
+                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="infos">
-                        <h5>MORE ABOUT ME</h5>
-                        <h2>Credentials</h2>
-                    </div>
+                  <div class="infos">
+                    <h5>MORE ABOUT ME</h5>
+                    <h2>Credentials</h2>
+                    <button class="btn_div">resume </button>
+                  </div>
 
-                    <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
-						
-	
-			
-<img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                  <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
 
-                        
-                    </a>
+
+
+                    <img decoding="async"
+                      src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+
+
+                  </a>
                 </div>
+              </div>
             </div>
-    </div>
-      </div>
-       <div class="col-lg-5 col-11 my-3 div_box">
-<div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
-            <div class="info-box shadow-box h-full">
+
+          </div>
+          <div class="col-lg-5 col-11 my-3 div_box">
+            <div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
+              <div class="info-box shadow-box h-full">
                 <a class="overlay-link" href="https://wpriverthemes.com/gridx/credential/"></a>
-				
 
-				
-				
-<img decoding="async" class="proj-img" src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
+
+
+
+                <img decoding="async" class="proj-img"
+                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="infos">
-                        <h5>MORE ABOUT ME</h5>
-                        <h2>Credentials</h2>
-                    </div>
+                  <div class="infos">
+                    <h5>MORE ABOUT ME</h5>
+                    <h2>Credentials</h2>
+                  </div>
 
-                    <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
-						
-	
-			
-<img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                  <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
 
-                        
-                    </a>
+
+
+                    <img decoding="async"
+                      src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+
+
+                  </a>
                 </div>
+              </div>
             </div>
-    </div>
-      </div>   <div class="col-lg-5 col-11 my-3 div_box">
-<div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
-            <div class="info-box shadow-box h-full">
+          </div>
+          <div class="col-lg-5 col-11 my-3 div_box">
+            <div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
+              <div class="info-box shadow-box h-full">
                 <a class="overlay-link" href="https://wpriverthemes.com/gridx/credential/"></a>
-				
 
-				
-				
-<img decoding="async" class="proj-img" src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
+
+
+
+                <img decoding="async" class="proj-img"
+                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="infos">
-                        <h5>MORE ABOUT ME</h5>
-                        <h2>Credentials</h2>
-                    </div>
+                  <div class="infos">
+                    <h5>MORE ABOUT ME</h5>
+                    <h2>Credentials</h2>
+                  </div>
 
-                    <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
-						
-	
-			
-<img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                  <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
 
-                        
-                    </a>
+
+
+                    <img decoding="async"
+                      src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+
+
+                  </a>
                 </div>
+              </div>
             </div>
-    </div>
-      </div>   <div class="col-lg-5 col-11 my-3 div_box">
-<div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
-            <div class="info-box shadow-box h-full">
+          </div>
+          <div class="col-lg-5 col-11 my-3 div_box">
+            <div data-aos="zoom-in" class="about-crenditials-box aos-init aos-animate col-12">
+              <div class="info-box shadow-box h-full">
                 <a class="overlay-link" href="https://wpriverthemes.com/gridx/credential/"></a>
-				
 
-				
-				
-<img decoding="async" class="proj-img" src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
+
+
+
+                <img decoding="async" class="proj-img"
+                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png" alt="">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="infos">
-                        <h5>MORE ABOUT ME</h5>
-                        <h2>Credentials</h2>
-                    </div>
+                  <div class="infos">
+                    <h5>MORE ABOUT ME</h5>
+                    <h2>Credentials</h2>
+                  </div>
 
-                    <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
-						
-	
-			
-<img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                  <a href="https://wpriverthemes.com/gridx/credential/" class="about-btn">
 
-                        
-                    </a>
+
+
+                    <img decoding="async"
+                      src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+
+
+                  </a>
                 </div>
+              </div>
             </div>
-    </div>
-      </div>
-    </div>
+          </div>
+        </div>
       </div>
       <!-- ==================== col-9 END ======================================= -->
-<div class="col-1 div_3">
+      <div class="col-1 div_3">
 
-</div>
+      </div>
 
 
 

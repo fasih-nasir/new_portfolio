@@ -3,8 +3,9 @@
 
 /*  */
 :root {
-  --color1: #131415;
-  --color: #262728;
+  /* --color1: #131415; */
+  --color: #2b2a2ab6;
+  --color1:#9c9c9c36;
 
   --font-family-Sansation: "Sansation", sans-serif;
 
@@ -60,45 +61,44 @@ body {
   font-size: 17px !important;
   font-weight: 400 !important;
   color: white !important;
-  background-color: #6666663f !important;
-  backdrop-filter: blur(20px);
+  background-color: #2b2a2aec !important;
+
+  /* background-color: #6666663f !important; */
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset !important;
 }
-@media (max-width:992px) {
-  .div_3{
-    position: fixed!important;
-    top: 35% !important;
-    /* width: 5% !important; */
-    left: 0% !important;
-    height:60vh !important;
-  }
+
+.btn_div{
+  color: white;
+  background-color: var(--color) !important;
+  border: 0;
+  padding: 10px 15px;
 }
 .div_box{
   color: white !important;
-  background-color: #9c9c9c36 !important;
+  background-color: var(--color1) !important;
   backdrop-filter: blur(20px);
   border-radius: 15px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset !important;
 
 }
-
 .main_div .div_1 {
   height: 100%;
   position: relative !important;
 }
 
-@media (min-width:992px) {
-
-  .main_div .div_1 .icon_div {
-    position: absolute !important;
-    bottom: 5%;
-
-  }
-
+.fa_caret_up{
+  color: white;
 }
-
+.btn_inquire{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn_color{
+  background-color: var(--color1) !important;
+}
 .navbar {
   position: sticky !important;
   top: -5% !important;
