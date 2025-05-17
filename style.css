@@ -28,13 +28,12 @@ body {
     height: max-content !important;
   }
 .div_3{
-  height: max-content !important;
-  /* position: fixed; */
-top: 0%;
-left: 0%;
-border-radius: 0% !important;
-  transition: 0.5s ease-in-out !important;
+  border-radius:  0% !important;
+}
+#div_3{
+  border-radius: 0% !important;
 
+  height: max-content !important;
 }
 
   .h_100vh {
@@ -44,8 +43,11 @@ border-radius: 0% !important;
 
 }
 .navfix{
+  border-radius: 0% !important;
+  top: -5% !important;
+  left: 0% !important;
   position: fixed !important;
-  transition: 0.5s ease-in-out !important;
+  transition: 1.2s ease-in-out !important;
 }
 /* ====================== MEDIA QUERY END ============================= */
 
@@ -66,10 +68,13 @@ border-radius: 0% !important;
 .bg {
   background-color: var(--color) !important;
 }
+.main_div .div_1,
+.main_div .div_2{
 
+  height: 90vh ;
+}
 .main_div .div_1,
 .main_div .div_2 ,.div_3 {
-  height: 90vh;
   font-size: 17px !important;
   font-weight: 400 !important;
   color: white !important;
@@ -91,8 +96,7 @@ backdrop-filter: blur(25px) !important;
   backdrop-filter: blur(20px);
   border-radius: 15px;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset !important;
-
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .main_div .div_1 {
   height: 100%;
@@ -119,6 +123,12 @@ outline: none !important;
 
   }
   
+}
+.active_navlink{
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #8b8b8b !important;
 }
 .tooltip .tooltip-inner  {
   font-family: var(--font-family-Sansation) !important; /* Your desired font */
